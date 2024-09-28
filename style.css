@@ -1,0 +1,9 @@
+title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: gray
+}
+img.displaySlide{
+    display:block;
+}

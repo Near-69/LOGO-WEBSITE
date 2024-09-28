@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            background-color: bisque;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .caption {
+            margin-top: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html">Log out</a></li>
+            <li><a href="about.html">About My Logo</a></li>
+        </ul>
+    </nav>
+
+    <h1>Logo Gallery</h1>
+    <p>Explore our collection of logos below:</p>
+
+    <div class="gallery">
+        <figure>
+            <img src="images/FORMAL LOGO.jpg" alt="Formal Logo">
+            <figcaption class="caption">Formal Logo</figcaption>
+        </figure>
+        <figure>
+            <img src="images/INFORMAL.jpg" alt="Informal Logo">
+            <figcaption class="caption">Informal Logo</figcaption>
+        </figure>
+        <figure>
+            <img src="images/PERSONAL.jpg" alt="Personal Logo">
+            <figcaption class="caption">Personal Logo</figcaption>
+        </figure>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Logo Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
